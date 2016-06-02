@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Fruit Delete / {{ fruit.name }}</h1>
+    <span> Are you sure to delete this fruit ?</span>
+
+    {{ form_start(delete_form) }}
+    <br>
+    <input type="submit" class="btn btn-danger" value="Yes"> or <a href="{{ path('fruit_index') }}">Back to the list</a>
+    {{ form_end(delete_form) }}
+
+{% endblock %}

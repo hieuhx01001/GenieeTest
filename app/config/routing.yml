@@ -1,0 +1,8 @@
+geniee_test:
+    resource: "@GenieeTestBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
